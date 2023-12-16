@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.Yes-logo {
+  height: 50vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #f3e0eb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(70, 7, 73);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* CSS */
+.button-pink {
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  height: 70px;
+  width: 170px;
+  line-height: 20px;
+  list-style: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.button-yes {
+  background-color: #EA4C89;
+  margin: 15px;
+  color: #FFFFFF;
+}
+.button-no {
+  outline: #EA4C89;
+  border: #EA4C89 3px solid;
+  color: rgb(70, 7, 73); 
+
+}
+.button-pink:hover,
+.button-pink:focus {
+  background-color: #F082AC;
+  color: #FFFFFF;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+.confetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100%;
+  background-image: url('hear2.png'); /* Replace with your confetti image */
+  z-index: 1;
+  pointer-events: none;
+  animation: confettiAnimation 5s linear infinite; /* Adjust animation duration as needed */
+}
+
+@keyframes confettiAnimation {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
