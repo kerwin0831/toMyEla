@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import meAndHer from './meandher.jpg';
 import kerwin from './kerwin.png';
 import { Button } from 'react-bootstrap'
