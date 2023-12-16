@@ -51,7 +51,7 @@ const onMoveNoButton = () => {
             (    
               <> 
                 <Button className="button-pink button-yes" onClick={onHandleYes}>YES</Button>
-                <Button className="button-pink button-no" style={cssButtonNo} onClick={onHandleYes} onMouseEnter={onMoveNoButton} >NO</Button>
+                <Button className="button-pink button-no" style={cssButtonNo} onClick={onMoveNoButton} onMouseEnter={onMoveNoButton} >NO</Button>
               </>
             )    
           }
