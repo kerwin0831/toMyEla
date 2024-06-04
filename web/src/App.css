@@ -87,7 +87,11 @@
   pointer-events: none;
   animation: confettiAnimation 5s linear infinite; /* Adjust animation duration as needed */
 }
-
+@media (max-width: 600px) {
+  .App-header {
+    padding: 0 15px;
+  }
+}
 @keyframes confettiAnimation {
   0% {
     transform: translateY(-100%);
