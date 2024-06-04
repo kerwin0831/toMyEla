@@ -7,23 +7,23 @@ const Instruction = () => {
                 <p>**Inviting Someone to Dinner:**</p>
                 <p>Use the following format to invite someone to dinner:</p>
                 <ul>
-                <li><a href="wouldyoube.vercel.app/0/name">/0/name</a> (Replace "name" with the person's name)</li>
+                <li><a href="/0/name">wouldyoube.vercel.app/0/name</a> (Replace "name" with the person's name)</li>
                 </ul>
 
                 <p>**Specifying a Date:**</p>
                 <p>To specify a date for your invitation, use this format:</p>
                 <ul>
-                <li><a href="wouldyoube.vercel.app/0/name?when=20240123">/0/name?when=YYYYMMDD</a> (Replace "YYYYMMDD" with the desired date)</li>
+                <li><a href="/0/name?when=20240123">wouldyoube.vercel.app/0/name?when=YYYYMMDD</a> (Replace "YYYYMMDD" with the desired date)</li>
                 </ul>
 
                 <p>**Making it Official:**</p>
                 <p>To ask someone to become your significant other officially, use this format:</p>
                 <ul>
-                <li><a href="wouldyoube.vercel.app/1/name">/1/name</a> (Default relationship: Girlfriend)</li>
+                <li><a href="/1/name">wouldyoube.vercel.app/1/name</a> (Default relationship: Girlfriend)</li>
                 </ul>
                 <p>To specify a different relationship, use this format:</p>
                 <ul>
-                <li><a href="wouldyoube.vercel.app/1/name?status=sugarbaby">/1/name?status=relationship_status</a> (Replace "relationship_status" with the desired relationship title)</li>
+                <li><a href="/1/name?status=sugarbaby">wouldyoube.vercel.app/1/name?status=relationship_status</a> (Replace "relationship_status" with the desired relationship title)</li>
                 </ul>
                 </header>
             </div>
