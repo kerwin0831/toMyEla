@@ -23,7 +23,7 @@ const Instruction = () => {
                 </ul>
                 <p>To specify a different relationship, use this format:</p>
                 <ul>
-                <li><a href="/1/name?status=sugarbaby">wouldyoube.vercel.app/1/name?status=relationship_status</a> (Replace "relationship_status" with the desired relationship title)</li>
+                <li><a href="/1/name?status=status">wouldyoube.vercel.app/1/name?status=relationship_status</a> (Replace "relationship_status" with the desired relationship title)</li>
                 </ul>
                 </header>
             </div>
