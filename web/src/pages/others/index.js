@@ -47,13 +47,32 @@ const CustomizeName = () => {
         return (
             <>
                 <p>
-                    <b>{ name }</b>, would you do me the honor of being my {toUpperFirstChar(status)}?
+                    <b>{ toUpperFirstChar(name) }</b>, would you do me the honor of being my {toUpperFirstChar(status)}?
                 </p>
                 <img src="https://media.tenor.com/Je68nyCU_j8AAAAi/bubu-dudu-bubu-dudu-love.gif" alt="Animated GIF" />
             </>
         )
     }
-    
+     const TakeAPause = () => {
+        return (
+            <>
+                <p>
+                <b>{ toUpperFirstChar(name) }</b>, should we hit pause for now?
+                </p>
+                <img src="https://media.tenor.com/cofRHcGGOfoAAAAi/shy-cute.gif" alt="Animated GIF" />
+            </>
+        )
+     }
+    const switchType = (type) => {
+        switch (type){
+            case "1":
+                return <GirlfriendType />
+            case "2":
+                return <TakeAPause />
+            default:
+                return <DateType />
+        }
+    }
     return (
         <>
         <div className="App">
@@ -62,20 +81,33 @@ const CustomizeName = () => {
                 !isYes ? 
                 <>
                     {
-                        MESSAGE_TYPE[type] === "date" ? <DateType /> : <GirlfriendType />
+                      switchType(type)
                     }
                 </>
                 : 
                 <>
                 <div className="image-container">
-                    <img src="https://media.tenor.com/nLKPVCtMbioAAAAi/peach-cat-yay.gif" alt="Animated GIF" />
+                    {
+                        type === "2" ?  <img src="https://media.tenor.com/HmfOEyNouYIAAAAi/cat-peach.gif" alt="Animated GIF" />
+                        :  <img src="https://media.tenor.com/nLKPVCtMbioAAAAi/peach-cat-yay.gif" alt="Animated GIF" />
+                    }
+                   
                 </div>
                 <p>
                     {
-                        (MESSAGE_TYPE[type] === "date" ? 
-                        (<div>See you soon.</div>) :
-                        <>
-                        <b>You</b> and <b>I</b> are officially together.
+                        MESSAGE_TYPE[type] === "date" &&
+                        (<div>See you soon.</div>) 
+                    }
+                    {
+                        type === "1" &&
+                        (<>
+                        You are now my  { toUpperFirstChar(status)}, hooray, hooray!
+                        </> )
+                    }
+                    {
+                        type === "2" &&
+                        (<>
+                            Just kidding!
                         </> )
                     }
                 
