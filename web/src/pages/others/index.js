@@ -63,12 +63,24 @@ const CustomizeName = () => {
             </>
         )
      }
+     const Reconciliation = () => {
+        return (
+            <>
+                <p>
+                <b>{ toUpperFirstChar(name) }</b>, Any chance of a reconciliation?
+                </p>
+                <img src="https://media.tenor.com/cofRHcGGOfoAAAAi/shy-cute.gif" alt="Animated GIF" />
+            </>
+        )
+     }
     const switchType = (type) => {
         switch (type){
             case "1":
                 return <GirlfriendType />
             case "2":
                 return <TakeAPause />
+            case "3":
+                return <Reconciliation />
             default:
                 return <DateType />
         }
