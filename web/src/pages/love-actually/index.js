@@ -90,8 +90,7 @@ const LoveActually = () => {
   return (
     <div 
       style={{
-        margin: 0,
-        padding: 0,
+        paddingLeft: isMobile ? "3%" : 0,
         top:0,
         display: "flex",
         justifyContent: "center",
@@ -109,7 +108,7 @@ const LoveActually = () => {
       }}
             style={{
                 position: 'relative',
-                width: '500px',
+                width: '400px',
                 height: '500px',
                 margin: '20px auto',
 
