@@ -16,8 +16,8 @@ const Card = ({ children }) => {
     const isMobile = window.innerWidth <= 768;
     const cardStyle = {
         background: 'linear-gradient(135deg,rgb(255, 255, 255),rgb(249, 249, 249))',
-        width: isMobile ? "300px" : "380px", // Adjust width for mobile
-        height: isMobile ? "300px" : "380px",
+        width: isMobile ? "350px" : "380px", // Adjust width for mobile
+        height: isMobile ? "350px" : "380px",
         padding: "15px",
         borderRadius: '10px',
         boxShadow: '0 10px 10px rgba(86, 86, 86, 0.2)',
@@ -26,7 +26,6 @@ const Card = ({ children }) => {
         alignItems: 'center',
         fontSize: '42px',
         color: 'black',
-        FontFace: "",
         textTransform: "uppercase",
         textAlign: 'center',
         cursor: 'grab',
