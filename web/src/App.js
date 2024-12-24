@@ -6,6 +6,7 @@ import CustomizeName from './pages/others';
 import Instruction from './pages/instructions';
 import LoveActually from './pages/love-actually/';
 import Friends from './pages/friends/';
+import AteFriends from './pages/ate/';
 const App = () => {
 
     return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/ela" element={<Ela />} />
           <Route path="/love-actually" element={<LoveActually />} />
           <Route path="/friends" element={<Friends />} />
+          <Route path="/lovely-friends" element={<AteFriends />} />
           <Route path="/:type/:name" element={<CustomizeName />} />
         </Routes>
       </BrowserRouter>
