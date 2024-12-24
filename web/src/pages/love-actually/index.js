@@ -2,10 +2,11 @@ import Card from "./cards";
 import React, { useRef } from 'react';
 const LoveActually = () => {
   const audioRef = useRef(null);
+  const isMobile = window.innerWidth <= 768;
 
   const cards = [
     {
-      div: <div> Hi you <br/> <span style={{ color: 'gray', fontSize: "12px" }}> (swipe left)</span>  </div>
+      div: <div> Hi you <br/> <span style={{ color: 'gray', fontSize: "12px" }}> (swipe right)</span>  </div>
     },
     {
         div: <div> Growing up, I dreamed I'd end up with someone like this </div>
@@ -14,8 +15,8 @@ const LoveActually = () => {
       div: <div> 
         <img 
         style={{
-          width:"300px",
-          height:"300px",
+          width:isMobile ? "150px" : "300px",
+          height:isMobile ? "150px" : "300px",
           objectFit:"contain"
         }}
         alt="love-actually-1"
@@ -29,7 +30,7 @@ const LoveActually = () => {
     div: <div>
       <img 
         style={{
-          width: "250px",
+          width:isMobile ? "100px" : "250px",
           height: "auto",
           objectFit: "contain"
         }}
@@ -57,8 +58,8 @@ const LoveActually = () => {
       <img 
       
       style={{
-        width: "250px",
-        height: "auto",
+          width:isMobile ? "100px" : "250px",
+          height: "auto",
         objectFit: "contain"
       }}
       alt="love-actually-3"
@@ -96,7 +97,7 @@ const LoveActually = () => {
         justifyContent: "center",
         height: '100vh',
         width: "100vw",
-        
+        alignItems: "center",
         backgroundImage: `url("https://i.giphy.com/WWNObA6zP3wNZBYWlU.webp")`,
         backgroundSize: "cover",
         background: 'linear-gradient(135deg, #ff9a9e, #fad0c4)',
