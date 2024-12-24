@@ -15,8 +15,8 @@ const LoveActually = () => {
       div: <div> 
         <img 
         style={{
-          width:isMobile ? "150px" : "300px",
-          height:isMobile ? "150px" : "300px",
+          width:isMobile ? "250px" : "300px",
+          height:isMobile ? "250px" : "300px",
           objectFit:"contain"
         }}
         alt="love-actually-1"
@@ -30,7 +30,7 @@ const LoveActually = () => {
     div: <div>
       <img 
         style={{
-          width:isMobile ? "100px" : "250px",
+          width:isMobile ? "200px" : "250px",
           height: "auto",
           objectFit: "contain"
         }}
@@ -96,9 +96,7 @@ const LoveActually = () => {
         display: "flex",
         justifyContent: "center",
         height: '100vh',
-        width: "100vw",
         alignItems: "center",
-        backgroundImage: `url("https://i.giphy.com/WWNObA6zP3wNZBYWlU.webp")`,
         backgroundSize: "cover",
         background: 'linear-gradient(135deg, #ff9a9e, #fad0c4)',
       }}
